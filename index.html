@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Library</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; color: #1f2933; background: #f7f5f0; }
+    header { background: #1f3a5f; color: #fff; padding: 48px 24px; text-align: center; }
+    h1 { margin: 0 0 8px; font-size: 2.2rem; }
+    main { max-width: 900px; margin: 0 auto; padding: 32px 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .card h3 { margin-top: 0; color: #1f3a5f; }
+    footer { text-align: center; padding: 24px; color: #6b7280; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manager Library</h1>
+    <p>El catálogo, los socios y los préstamos de una biblioteca pequeña, en un solo lugar.</p>
+  </header>
+  <main>
+    <div class="grid">
+      <div class="card"><h3>Catálogo</h3><p>Libros con autor, ISBN, cinco categorías y control de ejemplares disponibles.</p></div>
+      <div class="card"><h3>Socios</h3><p>Registro y búsqueda de socios por nombre o documento.</p></div>
+      <div class="card"><h3>Préstamos</h3><p>Hasta 3 libros por préstamo, plazo de 14 días y devolución libro por libro.</p></div>
+      <div class="card"><h3>Vencidos</h3><p>Lista de libros sin devolver ordenada por días de retraso.</p></div>
+      <div class="card"><h3>Reportes</h3><p>Los libros más prestados en un rango de fechas.</p></div>
+      <div class="card"><h3>Roles</h3><p>Administrador y bibliotecario, con inicio de sesión por token.</p></div>
+    </div>
+  </main>
+  <footer>Prueba técnica SDD · Ficha ADSO 3239137 · React + Laravel</footer>
+</body>
+</html>
